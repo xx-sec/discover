@@ -108,18 +108,18 @@ else
      echo
 fi
 
-if [ -d /opt/Egress-Assess/.git ]; then
-     echo -e "${BLUE}Updating Egress-Assess.${NC}"
-     cd /opt/Egress-Assess/ ; git pull
-     echo
-else
-     echo -e "${YELLOW}Installing Egress-Assess.${NC}"
-     git clone https://github.com/ChrisTruncer/Egress-Assess.git /opt/Egress-Assess
-     /opt/Egress-Assess/setup/setup.sh
-     mv server.pem ../Egress-Assess/
-     rm impacket*
-     echo
-fi
+#if [ -d /opt/Egress-Assess/.git ]; then
+#     echo -e "${BLUE}Updating Egress-Assess.${NC}"
+#     cd /opt/Egress-Assess/ ; git pull
+#     echo
+#else
+#     echo -e "${YELLOW}Installing Egress-Assess.${NC}"
+#     git clone https://github.com/ChrisTruncer/Egress-Assess.git /opt/Egress-Assess
+#     /opt/Egress-Assess/setup/setup.sh
+#     mv server.pem ../Egress-Assess/
+#     rm impacket*
+#     echo
+#fi
 
 if [ -d /opt/Empire/.git ]; then
      echo -e "${BLUE}Updating Empire.${NC}"

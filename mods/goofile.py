@@ -43,6 +43,7 @@ def googleDork():
     if results != []:
         start += 100
 
+
 def main():
     global results
     global totalFiles
